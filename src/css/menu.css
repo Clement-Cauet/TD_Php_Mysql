@@ -1,0 +1,105 @@
+.header {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 125px;
+    background-color: #c0bebe;
+    border-bottom: 1px;
+    border-color: #474747;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 10px -5px #00000070;
+}
+
+.titre {
+    text-align: center;
+    color: #000000;
+}
+
+/* Menu du menu de l'entête */
+
+nav {
+    margin: 0px;
+}
+
+nav ul {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul::after {
+    display: block;
+    clear: both;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul > li {
+    display: inline;
+    position: relative;
+    top: 0px;
+    left: 0%;
+}
+
+nav ul > li > a {
+    padding: 10px 30px;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 11.7px;
+}
+
+nav ul > li > a:hover {
+    transform: scale(1.2);
+    font-weight: bold;
+    transition: 0.3s;
+    text-decoration: none ;
+}
+
+/* Sous menu du menu de l'entête */
+
+.chap {
+    display: none;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav li:hover .chap {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    left : 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.chap li a {
+    padding: 20px 30px;
+    background-color: #c0bebe;
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11.7px;
+    position: relative;
+    width: 90px;
+    left: 0px;
+}
+
+.chap li a:hover {
+    background-color: white;
+    border-color: #474747;
+    transition: 0.3s;
+    transform: scale(1);
+}
+

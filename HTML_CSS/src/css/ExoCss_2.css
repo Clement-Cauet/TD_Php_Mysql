@@ -1,0 +1,62 @@
+.header {
+    background-color: aqua;
+    height: 20px;
+    margin: 0%;
+}
+
+.coucou {
+    color: blue;
+    text-align: center;
+    margin: 0%;
+    font-size: 20px;
+}
+
+.menu {
+    background-color: red;
+    position: relative;
+    left: 0px;
+    top: -700px;
+    height: 700px;
+    width: 100px;
+    margin: 0%;
+}
+
+.mur {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    font-size: 20px;
+    margin: 0%;
+}
+
+.contenu {
+    background-color: green;
+    position: relative;
+    height: 700px;
+    margin: 0%;
+
+}
+
+.arbre {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    position: relative;
+    top: 300px;
+}
+
+.footer {
+    background-color: grey;
+    height: 20px;
+    margin: 0%;
+    position: relative;
+    top: -700px;
+}
+
+.sol {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    font-size: 20px;
+}
