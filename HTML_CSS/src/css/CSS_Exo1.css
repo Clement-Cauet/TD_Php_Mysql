@@ -1,0 +1,48 @@
+.site{
+    position: relative;
+    top: 150px;
+}
+
+.haut {
+    background-color: aqua;
+    height: 20px;
+    margin: 0%;
+}
+
+.coucou {
+    color: blue;
+    text-align: center;
+    margin: 0%;
+    font-size: 20px;
+}
+
+.contenu {
+    background-color: green;
+    position: relative;
+    height: 700px;
+    margin: 0%;
+
+}
+
+.arbre {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    position: relative;
+    top: 300px;
+}
+
+.bas {
+    background-color: grey;
+    height: 20px;
+    margin: 0%;
+    position: relative;
+    top: 0px;
+}
+
+.sol {
+    color: white;
+    text-align: center;
+    margin: 0%;
+    font-size: 20px;
+}

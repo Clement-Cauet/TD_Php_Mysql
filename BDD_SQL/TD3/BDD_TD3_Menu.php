@@ -8,7 +8,6 @@
                 <li><a href="BDD_TD3.php">TD3</a></li>
                 <li><a href="BDD_TD3_Exo1.php">Exo1</a></li>
                 <li><a href="BDD_TD3_Exo2.php">Exo2</a></li>
-                <li><a href="BDD_TD3_Exo3.php">Exo3</a></li>
                 </li>
             </ul>
         </nav>

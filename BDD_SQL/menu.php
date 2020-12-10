@@ -28,7 +28,6 @@
                     <ul class="chap">
                         <li><a href="TD3/BDD_TD3_Exo1.php">Exo1</a></li>
                         <li><a href="TD3/BDD_TD3_Exo2.php">Exo2</a></li>
-                        <li><a href="TD3/BDD_TD3_Exo3.php">Exo3</a></li>
                     </ul>
                 </li>
                 <li><a href="TD4/SQL_TD4.php">TD4</a>

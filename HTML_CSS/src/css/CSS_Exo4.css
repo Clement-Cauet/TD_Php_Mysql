@@ -1,4 +1,9 @@
-.header {
+.site{
+    position: relative;
+    top: 150px;
+}
+
+.haut {
     background-color: aqua;
     height: 20px;
     margin: 0%;
@@ -107,7 +112,7 @@
     margin: 0%;
 }
 
-.footer {
+.bas {
     background-color: grey;
     height: 20px;
     margin: 0%;

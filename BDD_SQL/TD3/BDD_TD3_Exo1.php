@@ -13,8 +13,8 @@
     ?>
     <div>
         <h1>Exercice 1</h1>
-        <p>Créer la base de données du MCD suivant , saisissez 5 matchs de tennis dans votre base :</p>
-        <img src="../src/img/tennis.png">
+        <p>Relire le cours :</p>
+        <p>C'est fait !</p>
     </div>
 </body>
 </html>
