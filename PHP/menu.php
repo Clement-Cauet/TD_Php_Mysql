@@ -27,6 +27,18 @@
                         <li><a href="Partie2/PHP_Partie2_ExoFinal.php">ExoFinal</a></li>
                     </ul>
                 </li>
+                <li><a href="Partie3/PHP_Partie3.php">Partie 3</a>
+                    <ul class="chap">
+                        <li><a href="Partie3/PHP_Partie3_Exo1.php">Exo1</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo2.php">Exo2</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo3.php">Exo3</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo4.php">Exo4</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo5.php">Exo5</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo6.php">Exo6</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo7.php">Exo7</a></li>
+                        <li><a href="Partie3/PHP_Partie3_Exo8.php">Exo8</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 </header>
