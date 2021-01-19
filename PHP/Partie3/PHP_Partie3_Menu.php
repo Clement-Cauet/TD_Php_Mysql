@@ -14,6 +14,7 @@
                 <li><a href="PHP_Partie3_Exo6.php">Exo6</a></li>
                 <li><a href="PHP_Partie3_Exo7.php">Exo7</a></li>
                 <li><a href="PHP_Partie3_Exo8.php">Exo8</a></li>
+                <li><a href="PHP_Partie3_Exo9.php">Exo9</a></li>
                 </li>
             </ul>
         </nav>

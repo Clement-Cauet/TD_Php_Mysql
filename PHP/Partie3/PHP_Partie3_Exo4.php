@@ -1,3 +1,58 @@
+<?php
+
+    class Personnage {
+        //Propriétés
+        private $pseudo;
+        private $attaque;
+        private $defense;
+        private $vie;
+
+        //Méthodes
+        public function __construct($pseudo, $attaque, $defense, $vie){
+            $this->pseudo = $pseudo;
+            $this->attaque = $attaque;
+            $this->defense = $defense;
+            $this->vie = $vie;
+        }
+        public function pseudo(){
+            return $this->pseudo;
+        }
+        public function attaque(){
+            return $this->attaque;
+        }
+        public function defense(){
+            return $this->defense;
+        }
+        public function vie(){
+            return $this->vie;
+        }
+    }
+
+    class Combat {
+        //Propriétés
+        private $charge;
+        private $degat;
+        private $resteVie;
+
+        //Méthodes
+        public function charge($perso1){
+            $this->charge = $perso1->attaque() + 10;
+        }
+        public function degat($perso2){
+            $this->degat = $this->charge - $perso2->defense();
+            $this->resteVie = $perso2->vie() + $perso2->defense() - $this->charge;
+            echo $this->degat;
+        }
+        public function resteVie(){
+            return $this->resteVie;
+        }
+    }
+
+    $perso1 = new Personnage("Julien", "30", "10", "100");
+    $perso2 = new Personnage("Lucide", "20", "20", "100");
+    $combat = new Combat();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,6 +69,54 @@
         <div>
             <h1>Exercice 4</h1>
             <p></p>
+            <table>
+                <tr>
+                    <td colspan="2"><?php echo $perso1->pseudo(); ?></td>
+                </tr>
+                <tr>
+                    <td>Attaque</td>
+                    <td><?php echo $perso1->attaque(); ?></td>
+                </tr>
+                <tr>
+                    <td>Défense</td>
+                    <td><?php echo $perso1->attaque(); ?></td>
+                </tr>
+                <tr>
+                    <td>Vie</td>
+                    <td><?php echo $perso1->vie(); ?></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td colspan="2"><?php echo $perso2->pseudo(); ?></td>
+                </tr>
+                <tr>
+                    <td>Attaque</td>
+                    <td><?php echo $perso2->attaque(); ?></td>
+                </tr>
+                <tr>
+                    <td>Défense</td>
+                    <td><?php echo $perso2->attaque(); ?></td>
+                </tr>
+                <tr>
+                    <td>Vie</td>
+                    <td><?php echo $perso2->vie(); ?></td>
+                </tr>
+            </table>
+            <h4><?php echo $perso1->pseudo(); ?> VS <?php echo $perso2->pseudo(); ?></h4>
+            <p>-<?php echo $perso1->pseudo(); ?> attaque <?php echo $perso2->pseudo(); ?></p>
+            <p>-<?php echo $perso1->pseudo(); ?> utilise la compétence charge avec une puissance de 10</p>
+            <?php $combat->charge($perso1); ?>
+            <p>-<?php echo $perso1->pseudo(); ?> inflige <?php $combat->degat($perso2); ?> points de dégats à <?php $perso2->Pseudo(); ?></p>
+            <p>-<?php echo $perso2->pseudo(); ?> a <?php echo $combat->resteVie(); ?> points de vie</p>
+            <p>-Fin du combat</p>
+        </div>
+        <div>
+            <?php    
+                //code source//
+                echo '<p>Code Source :</p>';
+                highlight_file((__FILE__));
+            ?>
         </div>
     </body>
 </html>

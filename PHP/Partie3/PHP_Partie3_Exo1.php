@@ -1,3 +1,19 @@
+<?php
+
+    class User {
+        //Propriétés
+        private $nom;
+        private $prenom;
+
+        //Méthodes
+        public function afficheUser() {
+            echo "Je suis un User";
+        }
+    }
+
+    $user = new User();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,6 +30,16 @@
         <div>
             <h1>Exercice 1</h1>
             <p></p>
+            <?php
+                $user->afficheUser();
+            ?> 
+        </div>
+        <div>
+            <?php    
+                //code source//
+                echo '<p>Code Source :</p>';
+                highlight_file((__FILE__));
+            ?>
         </div>
     </body>
 </html>

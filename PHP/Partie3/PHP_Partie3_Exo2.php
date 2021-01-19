@@ -1,3 +1,21 @@
+<?php
+
+    class constructeur {
+        //Propriétés
+        private $pseudo;
+        private $vie;
+
+        //Méthodes
+        public function construct() {}
+        public function vie() {
+            $this->vie = 100;
+            echo "Vie : ".$this->vie;
+        }
+    }
+
+    $constructeur = new constructeur();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -14,6 +32,16 @@
         <div>
             <h1>Exercice 2</h1>
             <p></p>
+            <?php
+                $constructeur->vie();
+            ?>
+        </div>
+        <div>
+            <?php    
+                //code source//
+                echo '<p>Code Source :</p>';
+                highlight_file((__FILE__));
+            ?>
         </div>
     </body>
 </html>
