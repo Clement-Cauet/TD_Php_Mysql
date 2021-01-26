@@ -16,15 +16,19 @@
             $this->defense = $defense;
             $this->vie = $vie;
         }
+        //Contient la variable pseudo
         public function pseudo(){
             return $this->pseudo;
         }
+        //Contient la variable attaque
         public function attaque(){
             return $this->attaque;
         }
+        //Contient la variable defense
         public function defense(){
             return $this->defense;
         }
+        //Contient la variable vie
         public function vie(){
             return $this->vie;
         }
@@ -54,12 +58,14 @@
             <p></p>
                     <?php 
                         while($Tab=$RequetStatement->fetch()){
-                        array_push($personnage, new Personnage($Tab[0], $Tab[1], $Tab[2], $Tab[3], $Tab[4])); 
+                            array_push($personnage, new Personnage($Tab[0], $Tab[1], $Tab[2], $Tab[3], $Tab[4])); 
+                        }
+                        //Affiche le pseudo et la vie des personnages de la bdd
                         foreach($personnage as $value){
-                           echo $value->vie();
+                            echo '<p>'.$value->pseudo().' a ';
+                            echo $value->vie().' points de vie</p>';
                         }
                     ?>
-                    <?php } ?>
         </div>
         <div>
             <?php    

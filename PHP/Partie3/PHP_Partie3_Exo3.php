@@ -8,26 +8,32 @@
         private $vie;
 
         //Méthodes
+        //Fonction contruct
         public function __construct($pseudo, $attaque, $defense, $vie){
             $this->pseudo = $pseudo;
             $this->attaque = $attaque;
             $this->defense = $defense;
             $this->vie = $vie;
         }
+        //Affiche le pseudo
         public function affichePseudo(){
             echo $this->pseudo;
         }
+        //Affiche l'attaque
         public function afficheattaque(){
             echo $this->attaque;
         }
+        //Affiche la défense
         public function affichedefense(){
             echo $this->defense;
         }
+        //Affiche la vie
         public function afficheVie(){
             echo $this->vie;
         }
     }
 
+    //Appel de l'objet Personnage
     $perso = new Personnage("Julien", "30", "10", "100");
 ?>
 
@@ -46,7 +52,14 @@
         ?>
         <div>
             <h1>Exercice 3</h1>
-            <p></p>
+            <p>Une classe peu posséder une méthode spéciale : « constructeur ». Comme c’est une méthode elle peu 
+                recevoir des paramètres. Attention à partir du moment ou il y a un constructeur qui attend des paramètres
+                vous ne pouvez plus instancier votre classe sans paramètre.</p>
+            <p>1) Reprendre la classe Personnage et implémenter le constructeur pour qu’il initialise la propriétés vie 
+                à 100 et initialise la propriété speudo avec la valeur passer en paramètre</p>
+            <p>2) Créer un personage Exemple personage1 = new personage("Julien");</p>
+            <p>3) Ajouter une méthode dans votre classe pour afficher le nombre de point de vie du personnage ainsi 
+                que son pseudo.</p>
             <table>
             <tr>
                 <td colspan="2"><?php $perso->affichePseudo(); ?></td>

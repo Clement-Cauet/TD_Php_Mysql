@@ -16,15 +16,19 @@
             $this->defense = $defense;
             $this->vie = $vie;
         }
+        //Contient la variable pseudo
         public function pseudo(){
             return $this->pseudo;
         }
+        //Contient la variable attaque
         public function attaque(){
             return $this->attaque;
         }
+        //Contient la variable defense
         public function defense(){
             return $this->defense;
         }
+        //Contient la variable vie
         public function vie(){
             return $this->vie;
         }

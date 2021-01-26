@@ -6,13 +6,17 @@
         private $vie;
 
         //Méthodes
-        public function construct() {}
+        public function __construct() {
+
+        }
+        //Affiche la vie
         public function vie() {
             $this->vie = 100;
             echo "Vie : ".$this->vie;
         }
     }
 
+    //Appel de l'objet constructeur
     $constructeur = new constructeur();
 ?>
 
@@ -31,8 +35,13 @@
         ?>
         <div>
             <h1>Exercice 2</h1>
-            <p></p>
+            <p>Une classe peu posséder une méthode spéciale : « constructeur ». Cette méthode est automatiquement appelée 
+            lorsqu’un objet de cette classe est instancié (créée)</p>
+            <p>Créer une classe Personnage qui possède 2 propriétés : Speudo et Vie ainsi qu’un constructeur vide : 
+                public function __construct(){}</p>
+            <p>Implémenter le constructeur pour qu’il initialise la propriétés vie à 100</p>
             <?php
+                //Appel de la method afficheUser de la class User
                 $constructeur->vie();
             ?>
         </div>

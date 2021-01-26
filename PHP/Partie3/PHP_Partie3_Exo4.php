@@ -8,21 +8,26 @@
         private $vie;
 
         //Méthodes
+        //Fonction contruct
         public function __construct($pseudo, $attaque, $defense, $vie){
             $this->pseudo = $pseudo;
             $this->attaque = $attaque;
             $this->defense = $defense;
             $this->vie = $vie;
         }
+        //Contient la variable pseudo
         public function pseudo(){
             return $this->pseudo;
         }
+        //Contient la variable attaque
         public function attaque(){
             return $this->attaque;
         }
+        //Contient la variable defense
         public function defense(){
             return $this->defense;
         }
+        //Contient la variable vie
         public function vie(){
             return $this->vie;
         }
@@ -35,14 +40,17 @@
         private $resteVie;
 
         //Méthodes
+        //Calcul de la charge avec la'attaque du personnage et la puissance de la charge
         public function charge($perso1){
             $this->charge = $perso1->attaque() + 10;
         }
+        //Calcul des dégats de la charge en fonction de la défense du personnage
         public function degat($perso2){
             $this->degat = $this->charge - $perso2->defense();
             $this->resteVie = $perso2->vie() + $perso2->defense() - $this->charge;
-            echo $this->degat;
+            return $this->degat;
         }
+        //Contient la variable restVie
         public function resteVie(){
             return $this->resteVie;
         }
@@ -107,7 +115,7 @@
             <p>-<?php echo $perso1->pseudo(); ?> attaque <?php echo $perso2->pseudo(); ?></p>
             <p>-<?php echo $perso1->pseudo(); ?> utilise la compétence charge avec une puissance de 10</p>
             <?php $combat->charge($perso1); ?>
-            <p>-<?php echo $perso1->pseudo(); ?> inflige <?php $combat->degat($perso2); ?> points de dégats à <?php $perso2->Pseudo(); ?></p>
+            <p>-<?php echo $perso1->pseudo(); ?> inflige <?php echo $combat->degat($perso2); ?> points de dégats à <?php $perso2->Pseudo(); ?></p>
             <p>-<?php echo $perso2->pseudo(); ?> a <?php echo $combat->resteVie(); ?> points de vie</p>
             <p>-Fin du combat</p>
         </div>

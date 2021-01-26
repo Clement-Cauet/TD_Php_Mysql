@@ -20,15 +20,19 @@ $BDD=new PDO('mysql:host=192.168.64.175; dbname=TD3-Cauet_exo5; charset=utf8','u
             $this->vie = $vie;
             $this->BDD = new PDO('mysql:host=192.168.64.175; dbname=TD3-Cauet_exo5; charset=utf8','user','user');
         }
+        //Contient la variable pseudo
         public function pseudo(){
             return $this->pseudo;
         }
+        //Contient la variable attaque
         public function attaque(){
             return $this->attaque;
         }
+        //Contient la variable defense
         public function defense(){
             return $this->defense;
         }
+        //Contient la variable vie
         public function vie(){
             return $this->vie;
         }
@@ -46,9 +50,11 @@ $BDD=new PDO('mysql:host=192.168.64.175; dbname=TD3-Cauet_exo5; charset=utf8','u
         public function __construct(){
             $this->BDD = new PDO('mysql:host=192.168.64.175; dbname=TD3-Cauet_exo5; charset=utf8','user','user');
         }
+        //Calcul de la charge avec la'attaque du personnage et la puissance de la charge
         public function charge($perso1){
             $this->charge = $perso1->attaque() + 10;
         }
+        //Calcul des dégats de la charge en fonction de la défense du personnage et l'update dans la bdd
         public function degat($perso2){
             $this->degat = $this->charge - $perso2->defense();
             $this->resteVie = $perso2->vie() + $perso2->defense() - $this->charge;
@@ -57,17 +63,20 @@ $BDD=new PDO('mysql:host=192.168.64.175; dbname=TD3-Cauet_exo5; charset=utf8','u
             $RequetStatement = $this->BDD->query($req);
             return $this->degat;
         }
+        //Restore la vie du personnage à 100 et l'update dans la bdd
         public function soin($perso2){
             $this->resteVie = 100;
             $vie = $this->resteVie;
             $req = "UPDATE `personnage` SET `vie`='$vie' WHERE `idPerso`='2'";
             $RequetStatement = $this->BDD->query($req);
         }
+        //Contient la variable restVie
         public function resteVie(){
             return $this->resteVie;
         }
     }
 
+    //Fonction d'update du personnage à la bdd
     function requet_update_pharmacie($BDD){
         try{
             if(isset($_POST['updateModifier'])){
