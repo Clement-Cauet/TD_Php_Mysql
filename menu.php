@@ -18,9 +18,9 @@
                         <li><a href="BDD_SQL/TD2/BDD_TD2.php">BDD_TD2</a></li>
                         <li><a href="BDD_SQL/TD3/BDD_TD3.php">BDD_TD3</a></li>
                         <li><a href="BDD_SQL/TD4/SQL_TD4.php">SQL_TD4</a></li>
-                        
                     </ul>
                 </li>
+                <li><a href="JS/JS.php">JS</a></li>
             </ul>
         </nav>
 </header>
