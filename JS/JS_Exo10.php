@@ -11,5 +11,16 @@
     <?php
         include("JS_Menu.php");
     ?>
+    <div>
+        <p onmouseover="this.innerHTML='<img src=src/img/Chat1.gif></img>'">Passe ta souris au dessus de ce texte</p>
+        <p onmouseover="this.innerHTML='<img src=src/img/Chat2.gif></img>'">Passe ta souris au dessus de ce texte</p>
+    </div>
+    <div>
+        <?php
+            //code source//
+            echo '<p>Code Source :</p>';
+            highlight_file((__FILE__));
+        ?>
+    </div>
 </body>
 </html>
