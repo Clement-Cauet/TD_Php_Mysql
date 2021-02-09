@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 10</h1>
         <p onmouseover="this.innerHTML='<img src=src/img/Chat1.gif></img>'">Passe ta souris au dessus de ce texte</p>
         <p onmouseover="this.innerHTML='<img src=src/img/Chat2.gif></img>'">Passe ta souris au dessus de ce texte</p>
     </div>

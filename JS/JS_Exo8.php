@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 8</h1>
         <p onmouseover="this.style.color='red'" onclick="this.style.color='lime'" ondblclick="this.style.color='navy'">Ceci est un texte qui change de couleur</p>
         <p onmouseover="this.style.color='red'">Ce texte devient rouge quand on passe sa souris dessus</p>
         <p onclick="this.style.color='lime'">Ce texte devient vert quand on clique dessus</p>

@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 2</h1>
         <p>Calculer la valeur du périmètre d'un cercle</p>
         <button onclick="calculer()">Calculer</button>
     </div>

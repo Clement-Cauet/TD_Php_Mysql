@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 5</h1>
         <p>On créer un premier tableau</p>
         <button onclick="boucle1()">Calculer</button>
         <p>On créer un deuxième tableau</p>

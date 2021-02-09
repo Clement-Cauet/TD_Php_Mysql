@@ -11,5 +11,19 @@
     <?php
         include("JS_Menu.php");
     ?>
+    <div>
+        <h1>Exercice 11</h1>
+        <h1 id="modif_paragraphe" onclick="modif_paragraphe(centrage_h1())">Original</h1>
+    </div>
+    <script>
+        function modif_paragraphe(){
+            var elem = document.getElementById('modif_paragraphe');
+            elem.innerHTML = '<i>Corrigé</i>';
+        }
+        function centrage_h1(){
+            var elem = document.querySelector("h1");
+            elem.setAttribute('style', 'text-align: center');
+        }
+    </script>
 </body>
 </html>

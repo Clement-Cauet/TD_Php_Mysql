@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 7</h1>
         <p>Jour de la semaine :</p>
         <button onclick="jourDeLaSemaine()">Cliquez</button>
     </div>

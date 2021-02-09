@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 3</h1>
         <p>On prend x=8 et a=3</p>
         <button onclick="multiplie()">Calculer</button>
         <p>On prend a=3 et b=2</p>

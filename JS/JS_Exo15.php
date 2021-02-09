@@ -11,5 +11,19 @@
     <?php
         include("JS_Menu.php");
     ?>
+    <div>
+        <h1>Exercice 15</h1>
+        <button id="init" onclick="init()">Init</button>
+        <span id="span1">Coucou</span>
+    </div>
+    <script>
+        function init(){
+            var span = document.getElementById("span1");
+            var Monobjetspan = addEventListener("click", monGestionnaire(), false);
+            function monGestionnaire(){
+                span.style.color='blue'
+            }
+        }
+    </script>
 </body>
 </html>

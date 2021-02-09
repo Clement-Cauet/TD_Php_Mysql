@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 6</h1>
         <p>On a un tableau tel que tab=[-2,1,4]</p>
         <button onclick="afficher(soustraction())">Calculer</button>
     </div>

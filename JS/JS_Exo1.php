@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 1</h1>
         <p>Calculer la valeur de l'aire d'un rectangle</p>
         <button onclick="calculer()">Calculer</button>
     </div>

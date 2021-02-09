@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 4</h1>
         <p>On a un tableau tel que tab=[-2,1,4]</p>
         <button onclick="afficher(additionne())">Calculer</button>
     </div>

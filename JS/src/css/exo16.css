@@ -1,0 +1,32 @@
+.horloge{
+    position: relative;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.horloge button{
+    position: relative;
+    top: -350px;
+}
+.troteuse{
+    position: relative;
+    top: 69px;
+    left: -8px;
+    z-index: 15;
+}
+.minute{
+    position: relative;
+    top: 105px;
+    left: -47px;
+    z-index: 10;
+}
+.heure{
+    position: relative;
+    top: 67px;
+    left: -86px;
+    z-index: 5;
+}
+.cadran{
+    position: relative;
+    top: -300px;
+}

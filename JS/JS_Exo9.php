@@ -12,6 +12,7 @@
         include("JS_Menu.php");
     ?>
     <div>
+        <h1>Exercice 9</h1>
         <p onclick="style.position='relative';style.left='600px';this.style.width='10px'" ondblclick="style.left='0';this.style.width='500px'">Ceci est un texte qui se déplace quand on clique dessus</p>
     </div>
     <div>
