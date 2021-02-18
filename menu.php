@@ -21,6 +21,7 @@
                     </ul>
                 </li>
                 <li><a href="JS/JS.php">JS</a></li>
+                <li><a href="API/API.php">API</a></li>
             </ul>
         </nav>
 </header>
