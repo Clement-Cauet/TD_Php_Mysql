@@ -13,6 +13,8 @@
     ?>
     <div>
         <h1>Exercice 5</h1>
+        <button id='submit'>Random moi</button>
+        <h2>Bienvenue dans l'arène N°<span id="arenne">…<span></h2>
     <div>
         <?php
             //code source//
@@ -20,5 +22,6 @@
             highlight_file((__FILE__));
         ?>
     </div>
+    <script src="JS/API_Exo5.js"></script>
 </body>
 </html>

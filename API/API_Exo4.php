@@ -13,6 +13,7 @@
     ?>
     <div>
         <h1>Exercice 4</h1>
+        <h2>Bienvenue dans l'arène N°<span id="arenne">…<span></h2>
     <div>
         <?php
             //code source//
@@ -20,5 +21,6 @@
             highlight_file((__FILE__));
         ?>
     </div>
+    <script src="JS/API_Exo4.js"></script>
 </body>
 </html>

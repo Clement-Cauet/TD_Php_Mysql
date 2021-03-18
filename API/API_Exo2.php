@@ -13,26 +13,15 @@
     ?>
     <div>
         <h1>Exercice 2</h1>
-        <span id="root" onclick="root()">Coucou</span>
-        <span name="test" onclick="test()">Bonjour</span>
+        <span id="root">Coucou</span>
+        <span name="test">Bonjour</span>
     <div>
-    <script>
-        function root(){
-            var elem = document.getElementById("root");
-            elem.innerHTML = "Salut";
-        }
-        function test(){
-            for(var i=0; i<3; i++){
-                var tab = document.getElementsByName("test");
-                tab.innerHTML = "Salut";
-            }
-        }
-    </script>
         <?php
             //code source//
             echo '<p>Code Source :</p>';
             highlight_file((__FILE__));
         ?>
     </div>
+    <script src="JS/API_Exo2.js"></script>
 </body>
 </html>

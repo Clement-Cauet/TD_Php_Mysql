@@ -14,17 +14,12 @@
     <div>
         <h1>Exercice 1</h1>
     <div>
-    <script>
-        setTimeout(function() {
-            alert("I'm here!")
-        }, 5000);
-        alert("Where are you?");
-    </script>
         <?php
             //code source//
             echo '<p>Code Source :</p>';
             highlight_file((__FILE__));
         ?>
     </div>
+    <script src="JS/API_Exo1.js"></script>
 </body>
 </html>
